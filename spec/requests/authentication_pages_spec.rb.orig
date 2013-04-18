@@ -3,6 +3,7 @@ require 'spec_helper'
 describe "Authentication" do
 
   subject { page }
+<<<<<<< HEAD
   
   describe "signin page" do
     before { visit signin_path }
@@ -10,6 +11,8 @@ describe "Authentication" do
     it { should have_selector('h1',	text: 'Sign in') }
     it { should have_selector('title', 	text: 'Sign in') }
   end
+
+=======
 
   describe "signin page" do
     before { visit signin_path }
@@ -52,4 +55,5 @@ describe "Authentication" do
       end
     end
   end
+>>>>>>> sign-in-out
 end
